@@ -7,6 +7,9 @@
   font-variation-settings:
     "wdth" 100;
 }
+*{
+    margin: 0;
+}
 .btn-primary{
     font-weight: 400;
     font-size: 1.3rem;
@@ -26,11 +29,10 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    gap: 50px   ;
 }
 .banner-content{
     width: 808px;
-    height: 506px;
+    /* height: 506px; */
 }
 .banner-image{
     width: 635px;
@@ -45,4 +47,23 @@
     font-weight: 400;
     font-size: 1.2rem;
     color: #272727;
+    margin-bottom: 20px;
+}
+
+/* Responsive css style  */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+        padding-top: 600px;
+        margin-bottom: 50px;
+    }
+    .banner-image{
+        width: 100%;
+        margin-left: 0px;
+    }
+
 }
